@@ -1,0 +1,15 @@
+.e-container {
+    height: 100vh; 
+    background-color: #ffffff;
+}
+.e-container__header {
+    padding: 1.6em 0;
+}
+.e-container__header-title {
+    font-size: 4em;
+    letter-spacing: 2px;
+    text-align: center;
+    
+    
+}
+
