@@ -1,5 +1,9 @@
+.head_nav {
+    background-color: #003459 !important;
+}
+
 .e-container {
-    height: 100vh; 
+    padding: 2em 0 ;
     background-color: #ffffff;
 }
 .e-container__header {
@@ -9,7 +13,9 @@
     font-size: 4em;
     letter-spacing: 2px;
     text-align: center;
-    
-    
 }
-
+.enhance-1__title, .enhance-2__title {
+    font-size: 2.6em;
+    letter-spacing: 1px;
+    margin-left: 56px;  
+}
