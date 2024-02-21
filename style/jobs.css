@@ -1,6 +1,10 @@
 
-.navbar {
-	background-color: #00171f;
+.job_nav {
+	background-color: #00171f !important;
+}
+
+.job_navbar__items{
+	background-color: #00171f !important;
 }
 main {
 
@@ -222,13 +226,6 @@ main h1 {
 		gap: 20px;
 	}
 }
-/* .center {
-  width: 50%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- 
-} */
+
 
 

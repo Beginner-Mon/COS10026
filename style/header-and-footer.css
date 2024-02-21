@@ -1,4 +1,8 @@
 /*                      FUNDAMENTAL STRUCTURE OF THE WEBSITE               */
+:color {
+    --nav_index_color: #003459;
+    --nav_jobs_color: ##00171f;
+}
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,7 +35,7 @@ body {
     padding: 18px 5%;
     display: flex;
     justify-content: space-between;
-    background-color: #003459;
+    background-color: var(--nav_index_color);
     align-items: center;
 
 }

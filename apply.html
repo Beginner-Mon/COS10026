@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <header class="navbar apply_nav">
         <input type="checkbox" id="menu" class="checkbtn">
         <label for="menu" class="menu-checkbox"><i class="fa fa-bars"></i></label>
 
@@ -42,47 +42,98 @@
             <h1 class="form__title">Application Form</h1>
             <fieldset class="form--reference">
                 <legend class="form-legend"> Your Roles</legend>
-                <input type="text" name="reference__number" id="re-num" placeholder="Reference number" required>
-            </fieldset>
-            <fieldset>
-                <legend class="form-legend">Personal details</legend>
-                <input type="text" name="first-name" id="fname" placeholder="First Name" required>
-                <input type="text" name="last-name" id="lname" placeholder="Last Name" required>
-                <input type="date" name="date" id="date" required>
-                <div class="form__radio">
-                    <div>
-                        <label for="gender">Male</label>
-                        <input type="radio" name="gender" id="gender">
-                    </div>
-                    <div class="form__radio--female">
-                        <label for="gender">Female</label>
-                        <input type="radio" name="gender" id="gender" >
-                    </div>
-                </div>
-                <input type="text" name="email" id="email" placeholder="Email Address" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
-                <input type="text" name="phone" id="number" placeholder="Phone Number">
+                <input class="form-input" type="text" name="reference__number" id="re-num"
+                    placeholder="Reference Number" required>
 
             </fieldset>
-            <fieldset>
-                <legend>Home Address</legend>
-                <input type="text" name="SA" placeholder="Street_address">
-                <input type="text" name="suburb" placeholder="Suburb/Town">
-                <select name="state" id="selection" required>
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                </select>
-                <input type="text" name="postcode" placeholder="postcode">
-            </fieldset>
-            <fieldset>
-                <legend>Personal Skills</legend>
-                <label for="text_area">Other Skills
-                </label>
+            <div class="form-1">
+                <fieldset class="form-personal">
+                    <legend class="form-legend">Personal details</legend>
+                    <div class="form-field">
+                        <input type="text" name="first-name" id="fname" class="form-input" placeholder=" " required>
+                        <label for="fname" class="form-label">First Name</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="last-name" id="lname" class="form-input" placeholder=" " required>
+                        <label for="fname" class="form-label">Last Name</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="date" name="date" id="date" class="form-input" required>
+                    </div>
+
+                    <div class="form__radio">
+                        <div>
+                            <label for="gender" class="gender-checkbox">Male</label>
+                            <input type="radio" name="gender" id="gender">
+                        </div>
+
+                        <div class="form__radio--female">
+                            <label for="gender" class="gender-checkbox">Female</label>
+                            <input type="radio" name="gender" id="gender">
+                        </div>
+                    </div>
+                    <div class="form-field">
+
+                        <input type="text" name="email" class="form-input" id="email" placeholder=" "
+                            pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="phone" class="form-input" id="number" placeholder=" ">
+                        <label for="number" class="form-label">Phone</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-address">
+                    <legend>Home Address</legend>
+                    <div class="form-field">
+                        <input class="form-input" id="streetAdress" type="text" name="SA" placeholder=" ">
+                        <label for="streetAdress" class="form-label">Address</label>
+                    </div>
+                    <div class="form-field">
+                        <input class="form-input" id="town" type="text" name="suburb" placeholder=" ">
+                        <label for="town" class="form-label">Suburb/Town</label>
+                    </div>
+                    <div class="form-field">
+                        <select class="form-input" name="state" id="selection" required>
+                            <option value="VIC">VIC</option>
+                            <option value="NSW">NSW</option>
+                            <option value="QLD">QLD</option>
+                            <option value="NT">NT</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="TAS">TAS</option>
+                            <option value="ACT">ACT</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <input class="form-input" id="postcode" type="text" name="postcode" placeholder=" ">
+                        <label for="postcode" class="form-label">Postcode</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <fieldset class="form-skills">
+                <legend>Personal&nbsp;Skills</legend>
+                <h3 class="skill-title">Skills that you have</h3>
+                <div class="input-checkbox">
+                    <div class="input-checkbox__skill">
+                        <input class="checkbox" type="checkbox" id="skill-1" name="soft skill" value="soft-skill">
+                        <label class="checkbox-label" for="skill-1"> Soft Skill</label>
+                    </div>
+                    <div class="input-checkbox__skill">
+                        <input class="checkbox" type="checkbox" id="skill-2" name="problem solving" value="problem-solving">
+                        <label class="checkbox-label" for="skill-2"> Problem Solving</label>
+                    </div>
+                    <div class="input-checkbox__skill">
+                        <input class="checkbox" type="checkbox" id="skill-3" name="web development" value="web-development">
+                        <label class="checkbox-label" for="skill-3"> Web Development</label>
+                    </div>
+                    <div class="input-checkbox__skill">
+                        <input class="checkbox" type="checkbox" id="skill-4" name="communication skills" value="communication-skills">
+                        <label class="checkbox-label" for="skill-4"> Communication Skills</label>
+                    </div>
+                </div>
+                <label class="form__other-skills" for="text_area">Other Skills</label> <br>
                 <textarea name="other_skill" id="other_skill" cols="30" rows="10"
                     placeholder="Enter text here"></textarea>
             </fieldset>

@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+.about_nav {
+    background-color: #003459;
+}
+
 p.story__font {
     font-family: 'lemon', serif;
 }
